@@ -1,0 +1,7 @@
+#####basicauth#####
+AuthUserFile "/home/htastenote/htastenote.starfree.jp/htpasswd/fanbook/.htpasswd"
+AuthName "Member Site"
+AuthType BASIC
+require valid-user
+Header set Access-Control-Allow-Origin: "*"
+#####end:basicauth#####

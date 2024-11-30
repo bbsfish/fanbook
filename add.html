@@ -1,0 +1,54 @@
+﻿<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="format-detection" content="telephone=no,address=no,email=no">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Cache-Control" content="no-cache">
+    <link rel="canonical" href="http://htastenote.starfree.jp/">
+    <!-- KMCDLKLE --><title></title>
+    <link rel="stylesheet" href="setting/style_mobile.css" type="text/css" media="screen and (max-width:720px)" />
+    <link rel="stylesheet" href="setting/C_style_mobile.css" type="text/css" media="screen and (max-width:720px)" />
+    <link rel="stylesheet" href="setting/style.css" type="text/css" media="screen and (min-width:719px)" />
+    <link rel="stylesheet" href="setting/C_style.css" type="text/css" media="screen and (min-width:719px)" />
+    <link rel="stylesheet" href="setting/add/add_style.css" type="text/css" media="screen and (min-width:719px)" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script type="text/javascript" src="setting/add/add.js"></script>
+</head>
+<body class="alltext">
+    <div id="position-header"><!-- Header出力位置 --></div>
+    <div class="main-a">
+        <div class="add-forms"><!-- id="main-contents" -->
+            <h3>データ追加用</h3>
+            <form method="post" name="addform" width="200px;">
+                <li><span>サークル名：</span><input type="text" name="data_1" size="40"></li>
+                <li><span>作者名：</span><input type="text" name="data_2" size="40"></li>
+                <li><span>テキストｆ名：</span><input type="text" name="data_3" size="40">.txt</li>
+                <li><span>Twitter：</span><input type="text" name="data_4" size="40"></li>
+                <li><span>メロン：</span><input type="text" name="data_5" size="40"></li>
+                <li><span>ホームページ：</span><input type="text" name="data_6" size="40"></li>
+                <li><button type="button" id="exp" style="width: 120px;" onclick="exp();">作成</button><input type="reset" value="リセット"></li>
+            </form>
+            <p> ↓ 作成結果 ↓ </p>
+            <li><span>ARRY追加用：</span><input type="text" name="expdata_1" size="100"></li>
+            <li><span>LIST追加用：</span><input type="text" name="expdata_2" size="100"></li>
+        </div>
+        <div class="urltranschanger-forms">
+            <h3>URL変換</h3>
+            <form name="form1" id="id_form1" action="">
+                <textarea name="textBox1" id="id_textBox1" type="text" value=""></textarea>
+                <input type="button" value="Exec" onclick="change();" />
+            </form>
+            <p> ↓ 変換結果 ↓ </p>
+            <form name="form2" id="id_form2" accept="">
+                <textarea name="textBox2" id="id_textBox2" type="text" value=""></textarea>
+            </form>
+        </div>
+    </div>
+    <!-- <script type="text/javascript" src="setting/Print.js" onload="indexRUN();"></script> -->
+    <script type="text/javascript" src="setting/FanBookC.js" onload="str();"></script>
+    
+</body>
+</html>

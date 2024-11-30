@@ -1,0 +1,169 @@
+/* メニュー */
+.serclelist {
+    display: none;  /* スマホ用メニューを消去 */
+}
+
+.rightlist {
+    float: right;
+    padding: 4px;
+    width: 230px;
+    border: 1px solid black;
+}
+
+.rightlist h4 {
+    font-size: 30px;
+    background-color: palevioletred;
+    border-radius:1px;
+    text-align: center;
+}
+
+.rightlist ul{
+    margin-left: 8px; 
+}
+
+.rightlist li {
+    margin: 4px;
+}
+
+.rightlist li:before{
+    content: '▷ ';
+}
+
+.rightlist a {
+    padding: 3px;
+}
+
+.rightlist a:hover {
+    background-color: rgb(133, 133, 133);
+    border-radius: 1px;
+}
+
+/* メイン */
+@media screen and (max-width: 720px) { 
+    /*　画面サイズ 699pxまで適用　*/
+  }
+  @media screen and (min-width: 721px) and (max-width: 1133px) {
+    /*　画面サイズ 700pxから1133pxまで適用　*/
+    .main {
+        width: 450px;
+    }
+  }
+  @media screen and (min-width:1134px) {
+    /*　画面サイズ 1134px以上から適用　*/
+    .main {
+        width: 890px;
+    }
+  }
+
+.main {
+    text-align: center;
+}
+
+.main img {
+    width: 400px;
+}
+
+.main li {
+    display: inline-block;
+    margin: 7px;
+}
+
+#main-serclename h4 {
+    font-size: 32px;
+    cursor: pointer;
+    background-color: palevioletred;
+    margin: 3px;
+}
+
+#main-serclename h4, #main-serclename a:hover {
+    font-weight: bolder;
+}
+
+.main h5 {
+    font-size: 22px;  
+}
+
+#main-contents li {
+    border: 1px solid black;
+    padding: 4px;
+    width: 410px;
+}
+
+#main-contents h6 {
+    text-align: left;
+    margin-left: 20px;
+    font-size: 19px;
+}
+
+#main-contents p {
+    cursor: pointer;
+}
+
+#main-contents p:hover {
+    font-weight: bolder;
+}
+
+/* 文書詳細記述欄 */
+#novel-detail {
+    width: 400px;
+    border: 1px solid black;
+    margin: auto;
+    border-radius: 8px;
+    background-color:rgb(173, 173, 173); 
+}
+
+#novel-detail h6{
+    font-size: 19px;
+    color: rgb(255, 214, 214);
+}
+
+#novel-detail p{
+    text-align: left;
+    margin-left: 10px;
+}
+
+#novel-detail p:before {
+    content: "□ ";
+}
+
+/* サークルデータ欄 */
+#sercle-data {
+    display: none;
+}
+
+#sercle-data table {
+    width: 100%;
+}
+
+#sercle-data th {
+    width: 200px;
+    border-right: solid palevioletred;
+}
+
+#sercle-data th,td {
+    text-align: left;
+}
+
+#sercle-data table {
+    border-bottom: solid palevioletred;
+    background-color: white;
+}
+
+
+/* WebView設定 */
+#webview {
+    cursor: pointer;
+    border-radius: 2px;
+}
+
+#webview:hover {
+    background-color: rgb(133, 133, 133);
+    font-weight: bolder;
+}
+
+/* index.html用設定 */
+#indexPrinter li {
+    display: inline-block;
+    margin: 4px;
+}
+

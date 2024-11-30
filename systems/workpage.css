@@ -1,0 +1,54 @@
+@media screen and (max-width: 720px) { 
+    /*　スマホ画面　*/
+    .workpagecerclelist {
+        display: none;
+    }
+
+    .workpagecerclelist_mobile {
+        display: block;
+        margin: 0 auto;
+    }
+    
+    .workpagecerclelist_mobile li {
+        border: 1px solid black;
+        display: inline-block;
+        width: 90%;
+        padding: 3px 5px;
+        margin: 0px 0px;
+    }
+  }
+
+@media screen and (min-width:719px) {
+    /*　PC画面　*/
+    .workpagecerclelist_mobile {
+        display: none;
+    }
+    
+    .workpagecerclelist {
+        display: block;
+        text-align: center;
+    }
+    
+    .workpagecerclelist h4 {
+        font-size: 1.6em;
+        text-align: center;
+        background-color: palevioletred;
+        margin: 3px;
+    }
+
+    .workpagecerclelist li {
+        border: 1px solid black;
+        display: inline-block;
+        width: 45%;
+        padding: 5px;
+        margin: 3px;
+    }
+}
+
+.workpagecerclelist a:hover {
+    text-decoration: underline;
+}
+
+#mobile-list-display {
+    display: block;
+}

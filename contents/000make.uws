@@ -1,0 +1,21 @@
+repeat
+fname = input("ファイル名")
+NewFilename=fname+".txt"
+cmdtxt0 = "type nul > "+NewFilename
+DOSCMD(cmdtxt0)
+While true
+    title = input("タイトル(h5)")
+    imgc = input("画像(img)")
+    txt1 = "<li><h5>"+title+"</h5>"
+    txt2 = "<img src=<#DBL>"+imgc+"<#DBL> /></li>"
+    FileId = fopen(NewFilename, F_READ or F_WRITE8)
+    fput(FileId, txt1, 0)
+    fput(FileId, txt2, 0)
+    fclose(FileId)
+    select SLCTBOX(SLCT_BTN,0,"Continue？","はい","いいえ")
+    case SLCT_1
+    case SLCT_2
+        break
+    selend
+Wend
+until true

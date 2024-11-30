@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="format-detection" content="telephone=no,address=no,email=no">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="canonical" href="http://htastenote.starfree.jp/">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Cache-Control" content="no-cache">
+    <!-- KMCDLKLE --><title></title>
+    <link rel="stylesheet" href="setting/style_mobile.css" type="text/css" media="screen and (max-width:720px)" />
+    <link rel="stylesheet" href="setting/C_style_mobile.css" type="text/css" media="screen and (max-width:720px)" />
+    <link rel="stylesheet" href="setting/style.css" type="text/css" media="screen and (min-width:719px)" />
+    <link rel="stylesheet" href="setting/C_style.css" type="text/css" media="screen and (min-width:719px)" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script type="text/javascript" src="setting/common.js"></script>
+</head>
+<body class="alltext">  
+  <div id="position-header"><!-- Header出力位置 --></div>
+  <div class="serclelist">
+    <h6 onclick="MobileListDisplay();">▽サークル</h6>
+      <div id="mobile-list-display">
+        <ul id="position-CercleList-1"><!-- CercleList出力位置 --></ul>
+      </div>
+  </div>
+  <div class="rightlist">
+    <h4>サークル</h4>
+    <ul id="position-CercleList-2"><!-- CercleList出力位置 --></ul>
+  </div>
+  <div class="main">
+    <div id="main-serclename">
+      <div id="sercle-data">
+      </div>
+    </div>
+    <div id="main-contents"></div>
+    <div id="position-replace-index"></div>
+  </div>
+  <script type="text/javascript" src="setting/FanBookC.js" onload="str();"></script>
+  <script type="text/javascript" src="setting/Print.js" onload="WebViewRead();"></script>
+  <div id="novel-detail"></div>
+</body>
+</html>
